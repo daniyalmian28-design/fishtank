@@ -31,13 +31,13 @@ public class Fishbowl implements Runnable {
 
         //variable and objects
         //create (construct) the objects needed for the game
-        Fish = new Fish (500,350,8,12,50,50);
+        Fish = new Fish (500,350,8,12,100,100);
         Fish.name = "Fish Fish";
         Fish.aliveimage = Toolkit.getDefaultToolkit().getImage("fish.png");
 
-        lobster = new Lobster (400,30,9,9,50,60);
-        lobster.name = "Lobster Lovster";
-        lobster.aliveimage = Toolkit.getDefaultToolkit().getImage("Lobster.png");
+        lobster = new Lobster (400,30,9,9,100,100);
+        lobster.name = "Lobster lobster";
+        lobster.aliveimage = Toolkit.getDefaultToolkit().getImage("lobster.png");
 
        background=Toolkit.getDefaultToolkit().getImage("ocean background.jpg");
 
@@ -77,10 +77,11 @@ public class Fishbowl implements Runnable {
         }
 
         g.drawImage(shark.aliveimage,shark.xpos,shark.ypos, shark.width, shark.height, null);
+        System.out.println("LOBSTER)");
         g.drawImage(lobster.aliveimage,lobster.xpos,lobster.ypos,lobster.width,lobster.height,null);
-        if (lobster.isalive==false){
-            lobster.aliveimage =  Toolkit.getDefaultToolkit().getImage("cookedlobster.png");
-        }
+        //if (lobster.isalive==false){
+        //    lobster.aliveimage =  Toolkit.getDefaultToolkit().getImage("cookedlobster.png");
+       //\ }
 
 
 
